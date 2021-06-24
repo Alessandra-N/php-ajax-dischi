@@ -1,1 +1,32 @@
+body {
+  background-color: #1e2d3b;
+}
+body header {
+  color: #1ed760;
+  font-size: 50px;
+  padding: 1rem;
+}
+body header select {
+  font-size: 20px;
+  width: 400px;
+}
+body .card {
+  width: 250px;
+  height: 400px;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+body .card .title {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+body .card .artist, body .card .year {
+  color: #757d76;
+}
 
+/* Utilities */
+.bg_head {
+  background-color: #2e3a46;
+}

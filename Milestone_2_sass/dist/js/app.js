@@ -7,7 +7,31 @@
   \********************/
 /***/ (() => {
 
+var app = new Vue({
+  el: "#app",
+  data: {
+    url: "http://localhost/php/php-ajax-dischi/Milestone_2_sass/src/server/server.php",
+    albums: [],
+    genres: [],
+    selected: "Choose a genre..."
+  },
+  mounted: function mounted() {
+    var _this = this;
 
+    axios.get(this.url).then(function (response) {
+      var albums = response.data;
+      _this.albums = albums;
+
+      _this.albums.forEach(function (album) {
+        if (!_this.genres.includes(album.genre)) {
+          _this.genres.push(album.genre);
+        }
+      });
+    })["catch"](function (e) {
+      console.error(e);
+    });
+  }
+});
 
 /***/ }),
 

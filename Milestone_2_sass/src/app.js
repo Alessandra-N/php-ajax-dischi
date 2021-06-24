@@ -11,8 +11,6 @@ const app = new Vue ({
     },
   
     mounted() {
-
-      alert("ciao!")
       
       axios
         .get(this.url)
@@ -37,4 +35,5 @@ const app = new Vue ({
     },
   
   })
+  
   
