@@ -34,7 +34,7 @@
 
             </header>
 
-            <main class="d-flex flex-wrap">
+            <main class="d-flex flex-wrap justify-content-center">
 
                 <div class="card bg_head" v-for="album in albums" v-if="selected === album.genre || selected === 'Choose a genre...'">
                     
